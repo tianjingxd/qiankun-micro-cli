@@ -4,7 +4,7 @@
   "description": "这是一个qiankun微应用的脚手架",
   "main": "index.js",
   "bin": {
-    "edu": "bin/edu"
+    "tpl": "bin/edu"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

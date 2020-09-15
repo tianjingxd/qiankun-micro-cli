@@ -1,0 +1,28 @@
+#!/usr/bin/env node
+const package = require('../package.json');
+const program = require('commander')
+
+program
+  .version(package, '-V --version', '当前脚手架版本')
+  .usage('<command> [options]')
+program
+  .command('list')
+  .description('查看所有的模版')
+  .alias('l')
+  .action(() => {
+    require('../lib/list')()
+  })
+program
+  .command('init')
+  .description('生成一个新项目')
+  .alias('i')
+  .action(() => {
+    require('../lib/init')()
+  })
+program
+  .parse(process.argv)
+
+if(!program.args.length){
+  // 这里是处理默认没有输入参数或者命令的时候，显示help信息
+  program.help()
+}

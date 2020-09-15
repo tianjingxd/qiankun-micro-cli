@@ -1,0 +1,28 @@
+{
+  "name": "qiankun-micro-cli",
+  "version": "1.0.0",
+  "description": "这是一个qiankun微应用的脚手架",
+  "main": "index.js",
+  "bin": {
+    "edu": "bin/edu"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "commander": "^6.1.0",
+    "cross-spawn": "^7.0.3",
+    "download-git-repo": "^3.0.2",
+    "handlebars": "^4.7.6",
+    "inquirer": "^7.3.3",
+    "ora": "^5.1.0",
+    "request": "^2.88.2"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
+}
